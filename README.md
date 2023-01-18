@@ -23,13 +23,15 @@ You can use the following environment variables in order to configure the contai
 
 Name | Required | Description
 --- | --- | ---
-**GD_API_ENABLED**     | *false* | Whether to enable the API or not (default: **true**)
-**GD_DB_HOSTNAME**     | *true*  | MySQL database endpoint
-**GD_DB_NAME**         | *true*  | MySQL database name
-**GD_DB_USERNAME**     | *true*  | MySQL database user
-**GD_DB_PASSWORD**     | *false*  | MySQL database password
-**GD_DB_TABLE_PREFIX** | *false* | MySQL database table prefix (default: **gd_**)
-**GD_ENCRYPTION_SALT** | *false* | Encryption Salt (default: **changeme**)
+**GD_API_ENABLED**      | *false* | Whether to enable the API or not (default: **true**)
+**GD_TIMEOUT**          | *9400*  | Generate Data timeout (default: **9400**)
+**GD_MAX_GENERATE_ROWS**| *100000* | Maximum allowed number of rows to generate. (default: **100000**)
+**GD_DB_HOSTNAME**      | *true*  | MySQL database endpoint
+**GD_DB_NAME**          | *true*  | MySQL database name
+**GD_DB_USERNAME**      | *true*  | MySQL database user
+**GD_DB_PASSWORD**      | *false*  | MySQL database password
+**GD_DB_TABLE_PREFIX**  | *false* | MySQL database table prefix (default: **gd_**)
+**GD_ENCRYPTION_SALT**  | *false* | Encryption Salt (default: **changeme**)
 
 Example using an external database:
 
