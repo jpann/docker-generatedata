@@ -35,9 +35,9 @@ ADD docker-entrypoint.sh /docker-entrypoint.sh
 EXPOSE 8080
 
 RUN \
-  chown -R 101:101 /opt/generatedata
+  chown -R 100:101 /opt/generatedata
 
 # Run as nginx user
-USER 101:101
+USER 100:101
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
